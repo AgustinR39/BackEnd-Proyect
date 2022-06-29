@@ -5,16 +5,11 @@ class Usuario {
         this.libros = libros
         this.mascotas = mascotas
     }
-
-    // getFullName() {
-    //     console.log(this.nombre)
-    // }
 }
 
 const usuario1 = new Usuario('Agustín', 'Ronchi', [{nombre: 'Renegados', autor: 'Marissa Meyer'}, {nombre: 'Mentes Poderosas', autor: 'Alexandra Bracken'}],['Loro'])
 
 function miUsuario() {
-    
     getFullName();
     countMascotas();
     getBooksName();
@@ -47,10 +42,8 @@ function getBooksName() {
     for (const name of usuario1.libros) {
         console.log(name.nombre)
     }
-
 }
 
 addMascota();
 addBook();
 miUsuario();
-
